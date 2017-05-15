@@ -12,7 +12,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Dependancies for extensions
 RUN apt-get update -yqq
-RUN apt-get install libicu-dev libpng-dev libjpeg-dev libbz2-dev libfontconfig xvfb libxrender1 libxrender-dev -yqq
+RUN apt-get install git zip libicu-dev libpng-dev libjpeg-dev libbz2-dev libfontconfig xvfb libxrender1 libxrender-dev -yqq
 
 # Install extensions
 RUN docker-php-ext-install intl
